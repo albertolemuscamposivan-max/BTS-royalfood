@@ -1,0 +1,23 @@
+/* Espaciado general para las tarjetas de platillos */
+#platillos .border {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+}
+
+/* Tamaño y comportamiento de las imágenes circulares */
+.imagen-redonda-giratoria {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.6s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.imagen-redonda-giratoria:hover {
+    transform: rotate(360deg);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
